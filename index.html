@@ -2,19 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+
     <title>BERTIN SERVICES LTD | Data Analysis, RRA & Business Registration Rwanda</title>
+
     <meta name="description" content="BERTIN SERVICES LTD provides professional data analysis, statistical analysis, research support, business registration, RRA services, Excel reporting and data entry services in Rwanda.">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>BERTIN SERVICES LTD | Data Analysis, RRA & Business Registration Rwanda</title>
-
-    <meta name="description" content="BERTIN SERVICES LTD provides data analysis, statistical analysis, Excel reporting, data entry and cleaning, research support, RRA services, and business registration support in Rwanda.">
-
-    <meta name="keywords" content="BERTIN SERVICES LTD, Data Analysis Rwanda, Data Analyst Rwanda, Statistical Analysis Rwanda, Excel Reporting Rwanda, Data Entry Rwanda, RRA Services Rwanda, Business Registration Rwanda, Company Registration Rwanda, Research Support Rwanda">
+    <meta name="keywords" content="Data Analysis Rwanda, Statistical Analysis Rwanda, Business Registration Rwanda, Company Registration Rwanda, RRA Services Rwanda, Excel Reporting Rwanda, Data Entry Rwanda, Research Support Rwanda">
 
     <meta name="author" content="BERTIN SERVICES LTD">
-
     <meta name="robots" content="index, follow">
 
     <link rel="canonical" href="https://nbertin895.github.io/bertin-services-website/">
@@ -23,15 +18,15 @@
     <meta name="google-site-verification" content="gY11AbMD3ta3WYmxHfxqyqp10MTA39w0u4TVO7jofD4">
 
     <!-- Open Graph -->
-    <meta property="og:title" content="BERTIN SERVICES LTD | Professional Business Services">
-    <meta property="og:description" content="Data analysis, research support, RRA services and business registration support in Rwanda.">
+    <meta property="og:title" content="BERTIN SERVICES LTD | Professional Business Services in Rwanda">
+    <meta property="og:description" content="Professional support in data analysis, research, business registration, RRA services, Excel reporting and data management in Rwanda.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://nbertin895.github.io/bertin-services-website/">
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="BERTIN SERVICES LTD">
-    <meta name="twitter:description" content="Data analysis, research, RRA and business registration support in Rwanda.">
+    <meta name="twitter:title" content="BERTIN SERVICES LTD | Professional Business Services in Rwanda">
+    <meta name="twitter:description" content="Data analysis, research, business registration, RRA support and professional business services in Rwanda.">
 
     <style>
         * {
@@ -50,20 +45,27 @@
 
         a {
             text-decoration: none;
+            color: inherit;
         }
 
+        .container {
+            width: 90%;
+            max-width: 1150px;
+            margin: auto;
+        }
+
+        /* Header */
         header {
             background: #0f172a;
             color: white;
             position: sticky;
             top: 0;
             z-index: 1000;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.15);
         }
 
-        .nav-container {
-            max-width: 1150px;
-            margin: auto;
-            padding: 15px 20px;
+        .nav {
+            min-height: 72px;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -73,25 +75,26 @@
             display: flex;
             align-items: center;
             gap: 10px;
-            font-size: 21px;
+            font-size: 20px;
             font-weight: bold;
         }
 
-        .logo-icon {
-            width: 40px;
-            height: 40px;
+        .logo-mark {
+            width: 38px;
+            height: 38px;
+            border-radius: 9px;
             background: #2563eb;
-            border-radius: 10px;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 21px;
             font-weight: bold;
+            font-size: 22px;
         }
 
-        nav {
+        nav ul {
             display: flex;
-            gap: 22px;
+            list-style: none;
+            gap: 25px;
         }
 
         nav a {
@@ -104,49 +107,48 @@
             color: #60a5fa;
         }
 
+        /* Hero */
         .hero {
-            background: linear-gradient(135deg, #0f172a, #1d4ed8);
+            background: linear-gradient(135deg, #0f172a, #1e3a8a);
             color: white;
-            padding: 90px 20px;
+            padding: 100px 0;
         }
 
-        .hero-container {
-            max-width: 1150px;
-            margin: auto;
-            text-align: center;
+        .hero-content {
+            max-width: 800px;
         }
 
         .badge {
             display: inline-block;
-            background: rgba(255,255,255,0.15);
-            padding: 8px 16px;
+            background: rgba(255,255,255,0.12);
+            border: 1px solid rgba(255,255,255,0.2);
+            padding: 8px 15px;
             border-radius: 30px;
             margin-bottom: 20px;
-            font-size: 13px;
+            font-size: 14px;
         }
 
         .hero h1 {
-            font-size: 48px;
+            font-size: 55px;
+            line-height: 1.1;
             margin-bottom: 15px;
         }
 
         .hero h2 {
-            font-size: 24px;
-            font-weight: normal;
+            font-size: 27px;
+            color: #93c5fd;
             margin-bottom: 20px;
         }
 
         .hero p {
-            max-width: 750px;
-            margin: auto;
-            font-size: 17px;
-            opacity: 0.95;
+            font-size: 18px;
+            max-width: 720px;
+            color: #e2e8f0;
+            margin-bottom: 30px;
         }
 
         .buttons {
-            margin-top: 30px;
             display: flex;
-            justify-content: center;
             gap: 15px;
             flex-wrap: wrap;
         }
@@ -156,165 +158,210 @@
             padding: 13px 22px;
             border-radius: 8px;
             font-weight: bold;
+            transition: 0.3s;
         }
 
         .btn-primary {
-            background: white;
-            color: #1d4ed8;
-        }
-
-        .btn-whatsapp {
-            background: #16a34a;
+            background: #2563eb;
             color: white;
         }
 
-        section {
-            padding: 75px 20px;
+        .btn-primary:hover {
+            background: #1d4ed8;
         }
 
-        .container {
-            max-width: 1150px;
-            margin: auto;
+        .btn-outline {
+            border: 1px solid white;
+            color: white;
+        }
+
+        .btn-outline:hover {
+            background: white;
+            color: #0f172a;
+        }
+
+        /* General sections */
+        section {
+            padding: 80px 0;
         }
 
         .section-title {
             text-align: center;
-            margin-bottom: 45px;
+            margin-bottom: 50px;
         }
 
         .section-title h2 {
-            font-size: 34px;
+            font-size: 36px;
             color: #0f172a;
             margin-bottom: 10px;
         }
 
         .section-title p {
             color: #64748b;
+            max-width: 700px;
+            margin: auto;
         }
 
+        /* About */
         .about {
             background: white;
         }
 
-        .about-content {
-            max-width: 850px;
-            margin: auto;
-            text-align: center;
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
         }
 
-        .about-content p {
+        .about h3 {
+            font-size: 28px;
+            color: #0f172a;
             margin-bottom: 15px;
-            color: #475569;
         }
 
+        .about p {
+            color: #475569;
+            margin-bottom: 15px;
+        }
+
+        .about-box {
+            background: #eff6ff;
+            padding: 35px;
+            border-radius: 15px;
+            border-left: 5px solid #2563eb;
+        }
+
+        /* Stats */
         .stats {
-            background: #f1f5f9;
+            background: #0f172a;
+            color: white;
         }
 
         .stats-grid {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
-            gap: 20px;
-        }
-
-        .stat {
-            background: white;
-            padding: 25px;
+            gap: 25px;
             text-align: center;
-            border-radius: 12px;
         }
 
         .stat h3 {
-            font-size: 28px;
-            color: #2563eb;
+            font-size: 34px;
+            color: #93c5fd;
         }
 
         .stat p {
-            color: #64748b;
+            color: #cbd5e1;
         }
 
+        /* Services */
         .services {
-            background: white;
+            background: #f8fafc;
         }
 
         .service-category {
-            margin-bottom: 45px;
+            margin-bottom: 55px;
         }
 
-        .service-category h3 {
-            color: #0f172a;
+        .category-title {
             font-size: 25px;
-            margin-bottom: 20px;
+            color: #0f172a;
+            margin-bottom: 25px;
+            border-left: 5px solid #2563eb;
+            padding-left: 15px;
         }
 
-        .service-grid {
+        .services-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
+            gap: 25px;
         }
 
         .service-card {
-            background: #f8fafc;
-            border: 1px solid #e2e8f0;
-            border-radius: 12px;
-            padding: 25px;
+            background: white;
+            padding: 30px;
+            border-radius: 14px;
+            box-shadow: 0 8px 25px rgba(15,23,42,0.07);
             transition: 0.3s;
+            border: 1px solid #e2e8f0;
         }
 
         .service-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+            box-shadow: 0 12px 30px rgba(15,23,42,0.12);
         }
 
-        .service-card h4 {
+        .service-icon {
+            width: 48px;
+            height: 48px;
+            background: #dbeafe;
+            color: #1d4ed8;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 23px;
+            margin-bottom: 18px;
+        }
+
+        .service-card h3 {
             color: #0f172a;
             margin-bottom: 10px;
-            font-size: 19px;
         }
 
         .service-card p {
             color: #64748b;
-            font-size: 14px;
+            font-size: 15px;
             margin-bottom: 18px;
         }
 
         .service-link {
             color: #2563eb;
             font-weight: bold;
+            font-size: 14px;
         }
 
-        .how {
-            background: #f8fafc;
+        /* How it works */
+        .process {
+            background: white;
         }
 
-        .steps {
+        .process-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 25px;
         }
 
-        .step {
-            background: white;
-            padding: 30px;
+        .process-card {
             text-align: center;
-            border-radius: 12px;
+            padding: 30px;
         }
 
-        .step-number {
-            width: 45px;
-            height: 45px;
-            margin: 0 auto 15px;
+        .number {
+            width: 55px;
+            height: 55px;
+            margin: 0 auto 18px;
             background: #2563eb;
             color: white;
             border-radius: 50%;
             display: flex;
-            justify-content: center;
             align-items: center;
+            justify-content: center;
+            font-size: 22px;
             font-weight: bold;
         }
 
+        .process-card h3 {
+            margin-bottom: 10px;
+        }
+
+        .process-card p {
+            color: #64748b;
+        }
+
+        /* Why us */
         .why {
-            background: white;
+            background: #eff6ff;
         }
 
         .why-grid {
@@ -324,14 +371,14 @@
         }
 
         .why-card {
+            background: white;
             padding: 25px;
-            text-align: center;
-            border: 1px solid #e2e8f0;
             border-radius: 12px;
+            text-align: center;
         }
 
         .why-card h3 {
-            margin-bottom: 10px;
+            margin-bottom: 8px;
         }
 
         .why-card p {
@@ -339,27 +386,29 @@
             font-size: 14px;
         }
 
+        /* FAQ */
         .faq {
-            background: #f8fafc;
+            background: white;
         }
 
         .faq-item {
             max-width: 850px;
             margin: 0 auto 15px;
-            background: white;
-            padding: 20px;
+            border: 1px solid #e2e8f0;
             border-radius: 10px;
+            padding: 20px;
         }
 
         .faq-item h3 {
-            margin-bottom: 8px;
             color: #0f172a;
+            margin-bottom: 8px;
         }
 
         .faq-item p {
             color: #64748b;
         }
 
+        /* Contact */
         .contact {
             background: #0f172a;
             color: white;
@@ -369,6 +418,10 @@
             color: white;
         }
 
+        .contact .section-title p {
+            color: #cbd5e1;
+        }
+
         .contact-grid {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
@@ -376,7 +429,7 @@
         }
 
         .contact-card {
-            background: rgba(255,255,255,0.08);
+            background: #1e293b;
             padding: 25px;
             border-radius: 12px;
             text-align: center;
@@ -386,40 +439,42 @@
             margin-bottom: 8px;
         }
 
-        .contact-card p,
-        .contact-card a {
+        .contact-card p {
             color: #cbd5e1;
-            word-break: break-word;
-        }
-
-        footer {
-            background: #020617;
-            color: #94a3b8;
-            text-align: center;
-            padding: 25px 20px;
             font-size: 14px;
         }
 
-        .floating-whatsapp {
+        /* Footer */
+        footer {
+            background: #020617;
+            color: #94a3b8;
+            padding: 25px 0;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        /* WhatsApp floating button */
+        .whatsapp {
             position: fixed;
             right: 20px;
             bottom: 20px;
-            background: #16a34a;
-            color: white;
             width: 58px;
             height: 58px;
+            background: #25D366;
+            color: white;
             border-radius: 50%;
             display: flex;
-            justify-content: center;
             align-items: center;
+            justify-content: center;
             font-size: 25px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
             z-index: 999;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.25);
         }
 
+        /* Mobile */
         @media (max-width: 900px) {
-            .service-grid,
-            .steps {
+            .services-grid,
+            .process-grid {
                 grid-template-columns: repeat(2, 1fr);
             }
 
@@ -429,30 +484,38 @@
                 grid-template-columns: repeat(2, 1fr);
             }
 
+            .about-grid {
+                grid-template-columns: 1fr;
+            }
+
             .hero h1 {
-                font-size: 38px;
+                font-size: 42px;
             }
         }
 
         @media (max-width: 650px) {
-            nav {
+            nav ul {
                 display: none;
             }
 
             .hero {
-                padding: 70px 20px;
+                padding: 75px 0;
             }
 
             .hero h1 {
-                font-size: 32px;
+                font-size: 36px;
             }
 
             .hero h2 {
-                font-size: 20px;
+                font-size: 22px;
             }
 
-            .service-grid,
-            .steps,
+            .hero p {
+                font-size: 16px;
+            }
+
+            .services-grid,
+            .process-grid,
             .stats-grid,
             .why-grid,
             .contact-grid {
@@ -460,7 +523,7 @@
             }
 
             section {
-                padding: 55px 18px;
+                padding: 60px 0;
             }
         }
     </style>
@@ -469,28 +532,27 @@
 <body>
 
 <header>
-    <div class="nav-container">
-
-        <div class="logo">
-            <div class="logo-icon">B</div>
+    <div class="container nav">
+        <a href="#home" class="logo">
+            <span class="logo-mark">B</span>
             <span>BERTIN SERVICES LTD</span>
-        </div>
+        </a>
 
         <nav>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#how">How It Works</a>
-            <a href="#contact">Contact</a>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </nav>
-
     </div>
 </header>
 
-<main>
-
+<!-- Hero -->
 <section class="hero" id="home">
-    <div class="hero-container">
+    <div class="container hero-content">
 
         <div class="badge">Professional Business Support in Rwanda</div>
 
@@ -505,23 +567,20 @@
         </p>
 
         <div class="buttons">
-
-            <a href="#services" class="btn btn-primary">
-                Explore Services
-            </a>
+            <a href="#services" class="btn btn-primary">Explore Services</a>
 
             <a href="https://wa.me/250792559650?text=Hello%20BERTIN%20SERVICES%20LTD,%20I%20would%20like%20to%20request%20a%20service."
-               class="btn btn-whatsapp">
+               class="btn btn-outline"
+               target="_blank">
                 WhatsApp Us
             </a>
-
         </div>
 
     </div>
 </section>
 
+<!-- About -->
 <section class="about" id="about">
-
     <div class="container">
 
         <div class="section-title">
@@ -529,322 +588,436 @@
             <p>Professional, accurate and client-focused services.</p>
         </div>
 
-        <div class="about-content">
+        <div class="about-grid">
 
-            <p>
-                BERTIN SERVICES LTD is a Rwanda-based service business
-                providing practical support in data, research, business
-                registration and administrative services.
-            </p>
+            <div>
+                <h3>Practical Business & Data Support</h3>
 
-            <p>
-                Our goal is to help individuals, researchers, entrepreneurs
-                and organizations work with accurate information and
-                well-organized business documentation.
-            </p>
+                <p>
+                    BERTIN SERVICES LTD is a Rwanda-based service business
+                    providing practical support in data, research, business
+                    registration and administrative services.
+                </p>
 
-            <p>
-                We focus on professionalism, accuracy, confidentiality
-                and reliable client support.
-            </p>
+                <p>
+                    Our goal is to help individuals, researchers,
+                    entrepreneurs and organizations work with accurate
+                    information and well-organized business documentation.
+                </p>
+
+                <p>
+                    We focus on professionalism, accuracy, confidentiality
+                    and reliable client support.
+                </p>
+            </div>
+
+            <div class="about-box">
+                <h3>Our Approach</h3>
+
+                <p>
+                    We listen to your needs, understand the service required,
+                    organize the information and provide practical support
+                    in a clear and professional way.
+                </p>
+            </div>
 
         </div>
-
     </div>
-
 </section>
 
+<!-- Stats -->
 <section class="stats">
+    <div class="container stats-grid">
 
-    <div class="container">
+        <div class="stat">
+            <h3>100%</h3>
+            <p>Client Focus</p>
+        </div>
 
-        <div class="stats-grid">
+        <div class="stat">
+            <h3>6+</h3>
+            <p>Service Areas</p>
+        </div>
 
-            <div class="stat">
-                <h3>Data</h3>
-                <p>Analysis & Reporting</p>
-            </div>
+        <div class="stat">
+            <h3>24/7</h3>
+            <p>Online Contact</p>
+        </div>
 
-            <div class="stat">
-                <h3>RRA</h3>
-                <p>Tax Service Support</p>
-            </div>
-
-            <div class="stat">
-                <h3>RDB</h3>
-                <p>Business Support</p>
-            </div>
-
-            <div class="stat">
-                <h3>Research</h3>
-                <p>Survey & Data Support</p>
-            </div>
-
+        <div class="stat">
+            <h3>Rwanda</h3>
+            <p>Based Services</p>
         </div>
 
     </div>
-
 </section>
 
+<!-- Services -->
 <section class="services" id="services">
-
     <div class="container">
 
         <div class="section-title">
             <h2>Our Services</h2>
-            <p>Practical professional services for individuals and businesses.</p>
+
+            <p>
+                Professional support for individuals, researchers,
+                entrepreneurs and organizations in Rwanda.
+            </p>
         </div>
 
+        <!-- Business -->
         <div class="service-category">
 
-            <h3>Business Registration & Tax Services</h3>
+            <h3 class="category-title">
+                Business Registration & Tax Services
+            </h3>
 
-            <div class="service-grid">
+            <div class="services-grid">
 
                 <div class="service-card">
-                    <h4>Business Registration</h4>
+                    <div class="service-icon">🏢</div>
+
+                    <h3>Business Registration</h3>
+
                     <p>
                         Assistance with business registration processes
-                        and required documentation.
+                        and preparation of business information and documents.
                     </p>
+
                     <a class="service-link"
-                       href="https://wa.me/250792559650?text=Hello,%20I%20need%20support%20with%20Business%20Registration.">
+                       href="https://wa.me/250792559650?text=Hello%20BERTIN%20SERVICES%20LTD,%20I%20need%20support%20with%20Business%20Registration."
+                       target="_blank">
                         Request Service →
                     </a>
                 </div>
 
                 <div class="service-card">
-                    <h4>Company Registration</h4>
+                    <div class="service-icon">📄</div>
+
+                    <h3>Company Registration</h3>
+
                     <p>
-                        Support with company registration information
-                        and documentation.
+                        Support with company registration information,
+                        documentation and online application preparation.
                     </p>
+
                     <a class="service-link"
-                       href="https://wa.me/250792559650?text=Hello,%20I%20need%20support%20with%20Company%20Registration.">
+                       href="https://wa.me/250792559650?text=Hello%20BERTIN%20SERVICES%20LTD,%20I%20need%20support%20with%20Company%20Registration."
+                       target="_blank">
                         Request Service →
                     </a>
                 </div>
 
                 <div class="service-card">
-                    <h4>Business Amendments</h4>
+                    <div class="service-icon">🔄</div>
+
+                    <h3>Business Amendments</h3>
+
                     <p>
-                        Assistance with updating or amending business
-                        registration information.
+                        Assistance with updating business information and
+                        preparing amendment requests.
                     </p>
+
                     <a class="service-link"
-                       href="https://wa.me/250792559650?text=Hello,%20I%20need%20support%20with%20Business%20Amendments.">
+                       href="https://wa.me/250792559650?text=Hello%20BERTIN%20SERVICES%20LTD,%20I%20need%20support%20with%20Business%20Amendments."
+                       target="_blank">
                         Request Service →
                     </a>
                 </div>
 
                 <div class="service-card">
-                    <h4>Business Documents Support</h4>
+                    <div class="service-icon">📑</div>
+
+                    <h3>Business Documents Support</h3>
+
                     <p>
-                        Support with preparing and organizing business
-                        documents.
+                        Support with organizing and preparing business-related
+                        documents and information.
                     </p>
+
                     <a class="service-link"
-                       href="https://wa.me/250792559650?text=Hello,%20I%20need%20support%20with%20Business%20Documents.">
+                       href="https://wa.me/250792559650?text=Hello%20BERTIN%20SERVICES%20LTD,%20I%20need%20Business%20Documents%20Support."
+                       target="_blank">
                         Request Service →
                     </a>
                 </div>
 
                 <div class="service-card">
-                    <h4>Business Information Updates</h4>
+                    <div class="service-icon">✏️</div>
+
+                    <h3>Business Information Updates</h3>
+
                     <p>
-                        Assistance with updating business information
-                        and related records.
+                        Assistance with updating selected business
+                        information through the appropriate channels.
                     </p>
+
                     <a class="service-link"
-                       href="https://wa.me/250792559650?text=Hello,%20I%20need%20support%20with%20Business%20Information%20Updates.">
+                       href="https://wa.me/250792559650?text=Hello%20BERTIN%20SERVICES%20LTD,%20I%20need%20support%20with%20Business%20Information%20Updates."
+                       target="_blank">
                         Request Service →
                     </a>
                 </div>
 
                 <div class="service-card">
-                    <h4>RRA Services</h4>
+                    <div class="service-icon">💼</div>
+
+                    <h3>RRA Services</h3>
+
                     <p>
-                        Practical support with RRA-related tax and
-                        taxpayer service processes.
+                        Assistance with selected RRA-related online services,
+                        taxpayer information and declaration support.
                     </p>
+
                     <a class="service-link"
-                       href="https://wa.me/250792559650?text=Hello,%20I%20need%20support%20with%20RRA%20Services.">
+                       href="https://wa.me/250792559650?text=Hello%20BERTIN%20SERVICES%20LTD,%20I%20need%20support%20with%20RRA%20Services."
+                       target="_blank">
                         Request Service →
                     </a>
                 </div>
 
             </div>
-
         </div>
 
+        <!-- Data -->
         <div class="service-category">
 
-            <h3>Data & Analytics Services</h3>
+            <h3 class="category-title">
+                Data & Analytics Services
+            </h3>
 
-            <div class="service-grid">
+            <div class="services-grid">
 
                 <div class="service-card">
-                    <h4>Data Analysis</h4>
+                    <div class="service-icon">📊</div>
+
+                    <h3>Data Analysis</h3>
+
                     <p>
-                        Analysis and interpretation of data to support
-                        better decisions.
+                        Data analysis support to organize information,
+                        identify patterns and produce useful insights.
                     </p>
+
                     <a class="service-link"
-                       href="https://wa.me/250792559650?text=Hello,%20I%20need%20Data%20Analysis%20support.">
+                       href="https://wa.me/250792559650?text=Hello%20BERTIN%20SERVICES%20LTD,%20I%20need%20Data%20Analysis%20support."
+                       target="_blank">
                         Request Service →
                     </a>
                 </div>
 
                 <div class="service-card">
-                    <h4>Statistical Analysis</h4>
+                    <div class="service-icon">📈</div>
+
+                    <h3>Statistical Analysis</h3>
+
                     <p>
-                        Statistical analysis and interpretation for
-                        research and business needs.
+                        Statistical analysis support for research,
+                        projects, reports and decision-making.
                     </p>
+
                     <a class="service-link"
-                       href="https://wa.me/250792559650?text=Hello,%20I%20need%20Statistical%20Analysis%20support.">
+                       href="https://wa.me/250792559650?text=Hello%20BERTIN%20SERVICES%20LTD,%20I%20need%20Statistical%20Analysis%20support."
+                       target="_blank">
                         Request Service →
                     </a>
                 </div>
 
                 <div class="service-card">
-                    <h4>Excel Reporting</h4>
+                    <div class="service-icon">📊</div>
+
+                    <h3>Excel Reporting</h3>
+
                     <p>
-                        Professional Excel-based reporting, organization
-                        and data presentation.
+                        Professional Excel reporting, data organization,
+                        tables and useful summaries.
                     </p>
+
                     <a class="service-link"
-                       href="https://wa.me/250792559650?text=Hello,%20I%20need%20Excel%20Reporting%20support.">
+                       href="https://wa.me/250792559650?text=Hello%20BERTIN%20SERVICES%20LTD,%20I%20need%20Excel%20Reporting%20support."
+                       target="_blank">
                         Request Service →
                     </a>
                 </div>
 
                 <div class="service-card">
-                    <h4>Data Entry & Cleaning</h4>
+                    <div class="service-icon">🗂️</div>
+
+                    <h3>Data Entry & Cleaning</h3>
+
                     <p>
-                        Accurate data entry, cleaning and organization
-                        for reliable analysis.
+                        Accurate data entry, organization, cleaning and
+                        preparation for analysis and reporting.
                     </p>
+
                     <a class="service-link"
-                       href="https://wa.me/250792559650?text=Hello,%20I%20need%20Data%20Entry%20and%20Cleaning%20support.">
+                       href="https://wa.me/250792559650?text=Hello%20BERTIN%20SERVICES%20LTD,%20I%20need%20Data%20Entry%20and%20Cleaning%20support."
+                       target="_blank">
                         Request Service →
                     </a>
                 </div>
 
             </div>
-
         </div>
 
+        <!-- Research -->
         <div class="service-category">
 
-            <h3>Research & Survey Services</h3>
+            <h3 class="category-title">
+                Research & Survey Services
+            </h3>
 
-            <div class="service-grid">
+            <div class="services-grid">
 
                 <div class="service-card">
-                    <h4>Research & Survey Support</h4>
+                    <div class="service-icon">🔎</div>
+
+                    <h3>Research & Survey Support</h3>
+
                     <p>
-                        Support with research activities, surveys,
-                        questionnaires and data collection.
+                        Support with research data collection,
+                        survey organization and data preparation.
                     </p>
+
                     <a class="service-link"
-                       href="https://wa.me/250792559650?text=Hello,%20I%20need%20Research%20and%20Survey%20Support.">
+                       href="https://wa.me/250792559650?text=Hello%20BERTIN%20SERVICES%20LTD,%20I%20need%20Research%20and%20Survey%20Support."
+                       target="_blank">
                         Request Service →
                     </a>
                 </div>
 
                 <div class="service-card">
-                    <h4>Research Data Reporting</h4>
+                    <div class="service-icon">📝</div>
+
+                    <h3>Research Data Reporting</h3>
+
                     <p>
-                        Support with organizing, analyzing and reporting
-                        research data.
+                        Assistance with organizing research findings,
+                        tables, summaries and data reports.
                     </p>
+
                     <a class="service-link"
-                       href="https://wa.me/250792559650?text=Hello,%20I%20need%20Research%20Data%20Reporting%20support.">
+                       href="https://wa.me/250792559650?text=Hello%20BERTIN%20SERVICES%20LTD,%20I%20need%20Research%20Data%20Reporting%20support."
+                       target="_blank">
+                        Request Service →
+                    </a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">📋</div>
+
+                    <h3>Data Management Support</h3>
+
+                    <p>
+                        Practical support for organizing, managing and
+                        maintaining structured research and business data.
+                    </p>
+
+                    <a class="service-link"
+                       href="https://wa.me/250792559650?text=Hello%20BERTIN%20SERVICES%20LTD,%20I%20need%20Data%20Management%20Support."
+                       target="_blank">
                         Request Service →
                     </a>
                 </div>
 
             </div>
-
         </div>
 
     </div>
-
 </section>
 
-<section class="how" id="how">
+<!-- How it works -->
+<section class="process" id="how-it-works">
 
     <div class="container">
 
         <div class="section-title">
             <h2>How It Works</h2>
-            <p>Getting started is simple.</p>
+
+            <p>
+                Getting support from BERTIN SERVICES LTD is simple.
+            </p>
         </div>
 
-        <div class="steps">
+        <div class="process-grid">
 
-            <div class="step">
-                <div class="step-number">1</div>
+            <div class="process-card">
+                <div class="number">1</div>
                 <h3>Choose a Service</h3>
-                <p>Select the service you need.</p>
+                <p>
+                    Select the service that matches your needs.
+                </p>
             </div>
 
-            <div class="step">
-                <div class="step-number">2</div>
+            <div class="process-card">
+                <div class="number">2</div>
                 <h3>Contact Us</h3>
-                <p>Send us your request through WhatsApp or phone.</p>
+                <p>
+                    Contact us by WhatsApp or phone and explain your request.
+                </p>
             </div>
 
-            <div class="step">
-                <div class="step-number">3</div>
+            <div class="process-card">
+                <div class="number">3</div>
                 <h3>Get Support</h3>
-                <p>We discuss your needs and provide appropriate support.</p>
+                <p>
+                    We discuss the requirements and provide practical support.
+                </p>
             </div>
 
         </div>
 
     </div>
-
 </section>
 
+<!-- Why Choose Us -->
 <section class="why">
 
     <div class="container">
 
         <div class="section-title">
-            <h2>Why Choose Us</h2>
-            <p>Our approach is built around professional service.</p>
+            <h2>Why Work With Us?</h2>
+
+            <p>
+                We focus on clear communication and reliable service.
+            </p>
         </div>
 
         <div class="why-grid">
 
             <div class="why-card">
                 <h3>Accuracy</h3>
-                <p>We focus on accurate and well-organized information.</p>
+                <p>
+                    We pay attention to details and information quality.
+                </p>
             </div>
 
             <div class="why-card">
                 <h3>Professionalism</h3>
-                <p>We provide practical and professional client support.</p>
+                <p>
+                    We provide organized and professional client support.
+                </p>
             </div>
 
             <div class="why-card">
                 <h3>Confidentiality</h3>
-                <p>Client information is handled with care and discretion.</p>
+                <p>
+                    Client information is handled with care and discretion.
+                </p>
             </div>
 
             <div class="why-card">
                 <h3>Client Support</h3>
-                <p>We communicate clearly and focus on client needs.</p>
+                <p>
+                    We communicate clearly and focus on practical solutions.
+                </p>
             </div>
 
         </div>
 
     </div>
-
 </section>
 
+<!-- FAQ -->
 <section class="faq">
 
     <div class="container">
@@ -854,101 +1027,113 @@
         </div>
 
         <div class="faq-item">
-            <h3>What services does BERTIN SERVICES LTD provide?</h3>
-            <p>
-                We provide data analysis, statistical analysis, Excel reporting,
-                data entry and cleaning, research support, RRA services and
-                business registration support.
-            </p>
-        </div>
-
-        <div class="faq-item">
             <h3>Where is BERTIN SERVICES LTD located?</h3>
             <p>
-                BERTIN SERVICES LTD is based in Nyamata, Bugesera, Rwanda.
+                BERTIN SERVICES LTD is based in Nyamata, Bugesera, Rwanda,
+                and provides online support as well.
             </p>
         </div>
 
         <div class="faq-item">
             <h3>How can I request a service?</h3>
             <p>
-                You can contact us through WhatsApp, phone or email.
+                You can contact us through WhatsApp at 0792559650 and explain
+                the service you need.
             </p>
         </div>
 
         <div class="faq-item">
-            <h3>Does BERTIN SERVICES LTD provide RRA and business registration support?</h3>
+            <h3>Do you provide data analysis services?</h3>
             <p>
-                Yes. We provide practical assistance with RRA-related
-                services and business registration processes. Official
-                registration and approvals are handled by the relevant
-                authorities.
+                Yes. We provide support with data analysis, statistical
+                analysis, Excel reporting, data entry and data cleaning.
+            </p>
+        </div>
+
+        <div class="faq-item">
+            <h3>Do you help with business registration?</h3>
+            <p>
+                Yes. We provide assistance with business registration,
+                company registration, amendments and business documentation.
+            </p>
+        </div>
+
+        <div class="faq-item">
+            <h3>Do you provide RRA services?</h3>
+            <p>
+                We provide assistance with selected RRA-related online
+                services and taxpayer declaration support.
             </p>
         </div>
 
     </div>
-
 </section>
 
+<!-- Contact -->
 <section class="contact" id="contact">
 
     <div class="container">
 
         <div class="section-title">
-            <h2>Contact Us</h2>
-            <p>We are ready to discuss your needs.</p>
+            <h2>Contact BERTIN SERVICES LTD</h2>
+
+            <p>
+                Contact us to discuss the service you need.
+            </p>
         </div>
 
         <div class="contact-grid">
 
             <div class="contact-card">
-                <h3>Phone</h3>
-                <a href="tel:+250792559650">
-                    0792559650
-                </a>
+                <h3>📞 Phone</h3>
+                <p>0792559650</p>
             </div>
 
             <div class="contact-card">
-                <h3>WhatsApp</h3>
-                <a href="https://wa.me/250792559650">
-                    Chat with us
-                </a>
+                <h3>💬 WhatsApp</h3>
+                <p>0792559650</p>
             </div>
 
             <div class="contact-card">
-                <h3>Email</h3>
-                <a href="mailto:bertinnduwayo99@gmail.com">
-                    bertinnduwayo99@gmail.com
-                </a>
+                <h3>📧 Email</h3>
+                <p>bertinnduwayo99@gmail.com</p>
             </div>
 
             <div class="contact-card">
-                <h3>Location</h3>
+                <h3>📍 Location</h3>
                 <p>Nyamata, Bugesera, Rwanda</p>
             </div>
 
         </div>
 
-    </div>
+        <div style="text-align:center; margin-top:35px;">
+            <a href="https://wa.me/250792559650?text=Hello%20BERTIN%20SERVICES%20LTD,%20I%20would%20like%20to%20request%20a%20service."
+               class="btn btn-primary"
+               target="_blank">
+                Contact Us on WhatsApp
+            </a>
+        </div>
 
+    </div>
 </section>
 
-</main>
-
 <footer>
-    <p>
-        © 2026 BERTIN SERVICES LTD. All rights reserved.
-    </p>
+    <div class="container">
+        <p>
+            © 2026 BERTIN SERVICES LTD. All rights reserved.
+        </p>
 
-    <p>
-        Turning Data into Smart Decisions
-    </p>
+        <p>
+            Turning Data into Smart Decisions
+        </p>
+    </div>
 </footer>
 
-<a class="floating-whatsapp"
+<a class="whatsapp"
    href="https://wa.me/250792559650?text=Hello%20BERTIN%20SERVICES%20LTD,%20I%20would%20like%20to%20request%20a%20service."
+   target="_blank"
    aria-label="Contact BERTIN SERVICES LTD on WhatsApp">
-    ☎
+    💬
 </a>
 
 </body>
